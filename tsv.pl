@@ -22,7 +22,7 @@ while (<>) {
 		}
 		if ($record[0] eq 'EF') { $record[0] = $record0[0]} # fill header verticly
 
-		# fill empty cell
+		# create cell. One cell per line
 		if ($lineno == 1) 	{ @header_h0 = @record }
 		elsif ($lineno == 3) 	{ @header_h1 = @record }
 		elsif  ($lineno > 3) { 
